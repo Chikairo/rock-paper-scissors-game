@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+  
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    justify-content: space-evenly;
+    word-spacing: 2rem;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans';
+    height: calc(100vh - 1px);
+}
+
+img {
+    width: 150px;
+}
+
+button {
+    width: 200px;
+    margin: 0rem 2rem 0rem 0rem;
+    border-radius: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+}
+
+h2, p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2rem;
+}
+
+.reset {
+    font-size: 2rem;
+    padding: 1rem;
+    width: 30%;
+    border-radius: 1rem;
+    align-items: center;
+    justify-items: center;
+    margin: 2rem;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.moves {
+    display: flex;
+   justify-content: space-evenly;
+}
+
+@media (max-width: 786px) {
+    button {
+        font-size: 2rem;
+        padding: 1.25rem;
+        width: 70%;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    body {
+        margin: 2rem;
+    }
+
+    .reset {
+        font-size: 15px;
+        width: 80%;
+        padding: 0.75rem;
+    }
+
+    h2, p {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
