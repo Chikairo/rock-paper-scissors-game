@@ -1,5 +1,3 @@
-const randomNumber = Math.random();
-
 let computerMove = "";
 
 let h2 = document.querySelector("h2");
@@ -17,6 +15,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 };
 
 function computerChoice() {
+    const randomNumber = Math.random();
     
     if (randomNumber >= 0 && randomNumber < 1 / 3) {
         computerMove = "rock";
